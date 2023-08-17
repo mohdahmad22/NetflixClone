@@ -3,7 +3,12 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { MovieDialog } from '.'
 
-const MovieCard = ({ movie,width }) => {
+interface MovieCardProps {
+    movie:any,
+    width:number
+}
+
+const MovieCard = ({ movie,width }:MovieCardProps) => {
     const [openModal,setModal]= useState(false);
 
     const handleOpen=()=>{
