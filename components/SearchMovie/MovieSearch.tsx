@@ -27,7 +27,7 @@ const MovieSearch = ({ category }: MovieCategoryProps) => {
 
             <div className='flex flex-row flex-wrap gap-5 overflow-x-auto no-scrollbar'>
                 {
-                    movies && movies.map((movie) => (
+                    movies && movies.map((movie:any) => (
                         movie?.poster_path && <MovieCard movie={movie} key={movie.id} width={200} />
                     ))
                 }

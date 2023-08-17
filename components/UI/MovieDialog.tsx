@@ -3,7 +3,12 @@ import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
 import { Fragment, useEffect, useState } from 'react'
 
-export default function MovieDialog({movie,setModal}) {
+interface MovieDialogProps {
+    movie:any,
+    setModal:(t:boolean)=>void
+}
+
+export default function MovieDialog({movie,setModal}:MovieDialogProps) {
   let [isOpen, setIsOpen] = useState(true)
 
   function closeModal() {

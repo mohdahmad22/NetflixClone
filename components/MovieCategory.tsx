@@ -29,7 +29,7 @@ const MovieCategory = ({gener}:MovieCategoryProps) => {
         <p className='text-white font-bold text-[32px]'>{gener.name}</p>
         <div className='flex flex-row gap-5 overflow-x-auto no-scrollbar'>
         {
-            movies && movies.map((movie)=>(
+            movies && movies.map((movie:any)=>(
                 <MovieCard movie={movie} key={movie.id} width={200} />
             ))
         }
