@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { MovieCard } from '.';
 
 interface MovieCategoryProps {
-    gener:string
+    gener:{name:string}
 }
 
 const MovieCategory = ({gener}:MovieCategoryProps) => {

@@ -23,7 +23,7 @@ const fetchMoviegenere=()=>{
     <div>
         <PlayVideo />
         {movieGenre && movieGenre.map((gener)=>(
-            <MovieCategory gener={gener} key={gener} />
+            <MovieCategory gener={gener} key={gener.name} />
         ))}
     </div>
   )

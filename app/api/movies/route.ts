@@ -7,7 +7,7 @@ const options = {
     url: 'https://api.themoviedb.org/3/trending/movie/day?page=1',
     headers: {
         accept: 'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhOWMxMGQ5OWU3Zjk5YmQxOWQ1OTliNmIyM2ZiZDlmMyIsInN1YiI6IjY0ZGNiNTNkNTllOGE5MDExYzhiNGYwNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.NW_Vhm88cs_cVsm6FQQmWkf6BsQPE_K5PwQspII3OfA'
+        Authorization: `Bearer ${process.env.TMDB_TOKEN}`
       }
   };
 
